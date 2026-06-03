@@ -8,7 +8,7 @@ on:
       - 'README.md'
       - 'imgs/**'
   schedule:
-    - cron: '0 4,10 * * *'
+    - cron: '0 12,19 * * *'
 
 jobs:
   build:
@@ -41,7 +41,6 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install requests
-        pip install pypushdeer
 
     # 执行 签到脚本
     - name: Running checkin
